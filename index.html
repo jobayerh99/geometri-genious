@@ -33,7 +33,7 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-2xl">Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions ">
                             <button onclick="calculaTriangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -61,15 +61,24 @@
                         </div>
                     </div>
                 </div>
-                <!-- Triangle Card -->
+                <!-- Pentagone Card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                    <figure><img src="images/pentagon.png"
                             alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Pentagone</h2>
+                        <p class="text-center text-3xl">Area: 0.5 X p X b</p>
+                        <div class="flex gap-5">
+                            <input class="w-24 text-2xl p-2 rounded-md" type="text" name="" id="pentagon-perimeter" placeholder="p">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-md" type="text" name="" id="pentagone-apothem" placeholder="a">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area : <span id="pentagone-area">0</span> <span>cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculatePentagoneArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -106,6 +115,7 @@
     </main>
     <script src="script/triangle-calculate.js"></script>
     <script src="script/rectanglearea.js"></script>
+    <script src="script/pentagone-area.js"></script>
 </body>
 
 </html>
