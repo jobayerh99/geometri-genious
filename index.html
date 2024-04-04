@@ -47,11 +47,14 @@
                         <h2 class="card-title">Rectangle</h2>
                         <p class="text-3xl text-center">Area = W X L</p>
                         <div class="flex">
-                            <input class="w-24 text-2xl p-2 rounded-md" type="text" name="" id="" placeholder="W">
+                            <input class="w-24 text-2xl p-2 rounded-md" type="text" name="" id="rectangle-width" placeholder="W">
                             <span class="mr-4 ml-2">cm</span>
 
-                            <input class="w-24 text-2xl p-2 rounded-md" type="text" name="" id="" placeholder="L">
+                            <input class="w-24 text-2xl p-2 rounded-md" type="text" name="" id="rectangle-length" placeholder="L">
                             <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area : <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculateRectanglrArea()" class="btn btn-primary w-full">Calculate</button>
